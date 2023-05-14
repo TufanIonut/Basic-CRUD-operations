@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CNSHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clase">
+    <Key>
+      <PropertyRef Name="Id_clase" />
+    </Key>
+    <Property Name="Id_clase" Type="Int32" Nullable="false" />
+    <Property Name="nume_clasa" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="nr_elevi" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CNSHEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clase" EntityType="Self.Clase" />
+  </EntityContainer>
+</Schema>

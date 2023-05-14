@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CNSHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clase">
+    <Key>
+      <PropertyRef Name="Id_clase" />
+    </Key>
+    <Property Name="Id_clase" Type="int" Nullable="false" />
+    <Property Name="nume_clasa" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="nr_elevi" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CNSHModelStoreContainer">
+    <EntitySet Name="Clase" EntityType="Self.Clase" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

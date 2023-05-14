@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CNSHModelStoreContainer" CdmEntityContainer="CNSHEntities">
+    <EntitySetMapping Name="Clase">
+      <EntityTypeMapping TypeName="CNSHModel.Clase">
+        <MappingFragment StoreEntitySet="Clase">
+          <ScalarProperty Name="Id_clase" ColumnName="Id_clase" />
+          <ScalarProperty Name="nume_clasa" ColumnName="nume_clasa" />
+          <ScalarProperty Name="nr_elevi" ColumnName="nr_elevi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
